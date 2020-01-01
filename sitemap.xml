@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://shanyit.github.io/post/a/</loc>
+    <loc>https://shanyit.github.io/post2222222/a/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/post/</loc>
+    <loc>https://shanyit.github.io/post2222222/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -50,7 +50,7 @@
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/post/readme/</loc>
+    <loc>https://shanyit.github.io/post2222222/readme/</loc>
     <lastmod>2019-01-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -160,14 +160,14 @@
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/2018/04/11/service-mesh-vs-api-gateway/</loc>
-    <lastmod>2018-04-11T09:32:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://shanyit.github.io/tags/service-mesh/</loc>
     <lastmod>2018-04-11T09:32:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/2018/04/11/service-mesh-vs-api-gateway/</loc>
+    <lastmod>2018-04-11T09:32:00+00:00</lastmod>
   </url>
   
   <url>
