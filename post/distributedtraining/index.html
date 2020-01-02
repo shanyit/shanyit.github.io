@@ -240,9 +240,8 @@
 
 <!-- more --> 
 
-<p>There are some distributed training libraries such as <code>DataDistributedParallel</code> of Pytorch, <code>Apex</code> of Nvidia, and <code>Horovod</code> of Uber. <strong>&ldquo;Sometime both <code>DataDistributedParallel</code> and <code>Apex</code> are not compatible with <code>checkpoint_sequential</code> associated with chunks larger than 1, which means that the computed local gradients are not synchronous for all ranks when performing Ring-allreduce operation. It suprised me. So far, we cannot fix this bug</strong>. We will show tests by through a a comparison of <code>Horovod</code> and <code>Apex</code> over <a href="https://github.com/prigoyal/pytorch_memonger/tree/master/">a simple network</a>.</p>
-
-<p><img src="https://github.com/shanyit/picture/blob/master/Figure3.png" alt="a" /></p>
+<p>There are some distributed training libraries such as <code>DataDistributedParallel</code> of Pytorch, <code>Apex</code> of Nvidia, and <code>Horovod</code> of Uber. <strong>&ldquo;Sometime both <code>DataDistributedParallel</code> and <code>Apex</code> are not compatible with <code>checkpoint_sequential</code> associated with chunks larger than 1, which means that the computed local gradients are not synchronous for all ranks when performing Ring-allreduce operation. It suprised me. So far, we cannot fix this bug</strong>. We will show tests by through a a comparison of <code>Horovod</code> and <code>Apex</code> over <a href="https://github.com/prigoyal/pytorch_memonger/tree/master/">a simple network</a>.
+<img src="https://github.com/shanyit/picture/raw/master/Figure3.png" alt="" /></p>
 
 <h2 id="notes-about-checkpoint-sequential">Notes about checkpoint_sequential</h2>
 
