@@ -17,7 +17,7 @@
       <pubDate>Thu, 02 Jan 2020 19:26:50 +0800</pubDate>
       
       <guid>https://shanyit.github.io/post/2020-01-02-imagehostingservice/</guid>
-      <description>When we write something with Markdown, we frequently need to inset images to Markdown files with ![xxx](url) or ![xxx](relative path of picture). I recommand to use ![xxx](url) to add images due to changes of image paths when we migrate Blogs. However, if we use the first one, it would be better because image url does not ofen change. Github can provide us to use repositories to store our images for</description>
+      <description>When we write something with Markdown, we frequently need to inset images to Markdown files with ![xxx](url) or ![xxx](relative path of a picture). I recommand to use ![xxx](url) to add images due to changes of image paths when we migrate Blogs.For the first one, image url does not ofen change. Github can provide us to use repositories to store our images for free. So I introduce two methods to use</description>
     </item>
     
     <item>
