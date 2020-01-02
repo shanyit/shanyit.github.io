@@ -13,10 +13,10 @@
     
     <item>
       <title>Gradient Checkpointing Horovod</title>
-      <link>https://shanyit.github.io/post/distributedtraining/</link>
+      <link>https://shanyit.github.io/post/2019-12-01-distributedtraining/</link>
       <pubDate>Thu, 02 Jan 2020 11:29:54 +0800</pubDate>
       
-      <guid>https://shanyit.github.io/post/distributedtraining/</guid>
+      <guid>https://shanyit.github.io/post/2019-12-01-distributedtraining/</guid>
       <description>GradientCheckpointingHorovod Introduction Bert, Roberta, and Xlnet models are too large to be trained. They are often partioned on several GPUs (one defines this as Model Parallelism). Actually, layers are dependent which means current layer needs the ouput of preceding layer to continue some calculation. Assuming a large model is splitted into 4 parts each on a single GPU, other parts are waitting for others when one of part is runing some computation.</description>
     </item>
     

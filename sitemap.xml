@@ -4,7 +4,48 @@
   
   <url>
     <loc>https://shanyit.github.io/categories/</loc>
-    <lastmod>2020-01-02T11:29:54+08:00</lastmod>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/post/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/tags/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/categories/tips/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/post/2020-01-02-imagehostingservice/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/tags/image-hosting/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://shanyit.github.io/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2020-01-02T19:26:50+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,30 +62,12 @@
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/post/distributedtraining/</loc>
+    <loc>https://shanyit.github.io/post/2019-12-01-distributedtraining/</loc>
     <lastmod>2020-01-02T11:29:54+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://shanyit.github.io/tags/horovod/</loc>
-    <lastmod>2020-01-02T11:29:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shanyit.github.io/</loc>
-    <lastmod>2020-01-02T11:29:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shanyit.github.io/post/</loc>
-    <lastmod>2020-01-02T11:29:54+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://shanyit.github.io/tags/</loc>
     <lastmod>2020-01-02T11:29:54+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -56,31 +79,20 @@
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/2017/11/03/hello-world/</loc>
-    <lastmod>2017-11-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shanyit.github.io/categories/blogs/</loc>
+    <loc>https://shanyit.github.io/categories/geophysics/</loc>
     <lastmod>2017-08-15T21:09:12+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6/</loc>
+    <loc>https://shanyit.github.io/tags/repeating-earthquake/</loc>
     <lastmod>2017-08-15T21:09:12+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/post/findearth/</loc>
+    <loc>https://shanyit.github.io/post/2017-08-15-findearth/</loc>
     <lastmod>2017-08-15T21:09:12+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://shanyit.github.io/tags/%E9%87%8D%E5%A4%8D%E5%9C%B0%E9%9C%87/</loc>
-    <lastmod>2017-08-15T21:09:12+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -89,12 +101,12 @@
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/top/about/</loc>
+    <loc>https://shanyit.github.io/top/about_zhaohuabing/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://shanyit.github.io/top/books/</loc>
+    <loc>https://shanyit.github.io/top/books_zhaohuabing/</loc>
     <priority>0</priority>
   </url>
   

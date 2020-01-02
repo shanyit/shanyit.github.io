@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Gradient Checkpointing Horovod" />
+    <meta property="og:title" content="Gradient Checkpointing Horovod" />
+    <meta property="twitter:title" content="Gradient Checkpointing Horovod" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Distributed-Jing Blog</title>
+    <title>Gradient Checkpointing Horovod-Jing Blog</title>
 
-    <link rel="canonical" href="/tags/distributed/">
+    <link rel="canonical" href="/post/2019-12-01-distributedtraining/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -162,15 +162,46 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/home-bg-jeep.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-            <div class="site-heading">
-            
-            
-		    <span class="subheading"></span>
-                </div> 
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/horovod" title="Horovod">
+                            Horovod
+                        </a>
+                        
+                        <a class="tag" href="/tags/distributed" title="Distributed">
+                            Distributed
+                        </a>
+                        
+                        <a class="tag" href="/tags/checkpointing" title="Checkpointing">
+                            Checkpointing
+                        </a>
+                        
+                    </div>
+                    <h1>Gradient Checkpointing Horovod</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                 Jing
+                         
+                        on 
+                        Thursday, January 2, 2020
+                        
+                        
+                        
+                    </span>
+                </div>
             </div>
         </div>
     </div>
@@ -178,159 +209,144 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-    <a href="https://shanyit.github.io/post/2019-12-01-distributedtraining/">
-        <h2 class="post-title">
-            Gradient Checkpointing Horovod
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            GradientCheckpointingHorovod Introduction Bert, Roberta, and Xlnet models are too large to be trained. They are often partioned on several GPUs (one defines this as Model Parallelism). Actually, layers are dependent which means current layer needs the ouput of preceding layer to continue some calculation. Assuming a large model is splitted into 4 parts each on a single GPU, other parts are waitting for others when one of part is runing some computation.
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      Jing Thursday, January 2, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
+<article>
+    <div class="container">
+        <div class="row">
 
             
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-             
-            
                 
-            
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </div>
-    </section>
-    
 
-    
-	
-    <section class="visible-md visible-lg">
-	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
-        <div class="short-about">
-            
-            
-                <p>Seismologist</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               <li>
-                   <a href='/tags/distributed/index.xml' rel="alternate" type="application/rss+xml" title="Jing Blog" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/shanyit">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-            
-            
-               
+<h1 id="gradientcheckpointinghorovod">GradientCheckpointingHorovod</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Bert, Roberta, and Xlnet models are too large to be trained. They are often partioned on several GPUs (one defines this as <code>Model Parallelism</code>). Actually, layers are dependent which means current layer needs the ouput of preceding layer to continue some calculation. Assuming a large model is splitted into 4 parts each on a single GPU, other parts are waitting for others when one of part is runing some computation. Therefore it does not fully utilize GPU resources. It is not real parallel computing. Here we adopt <code>Data Parallelism</code> to train a large model. To do that, We should put a large model on a single GPU and train it with large batch size. Gradient checkpointing technique <a href="https://arxiv.org/abs/1604.06174">(Chen et al., 2016)</a> is good way to save memory cost. It just saves a few of intermediate variables in forward process. For backward process, it can use saved intermediate variables to recompute dropped intermediate variables needed by the backward process. It just trades slight computation for memory. It is implemented in Pytorch. You can import <code>checkpoint</code>, <code>checkpoint_sequential</code> function from torch.</p>
+
+<pre><code class="language-python">from torch.utils.checkpoint import checkpoint_sequential,checkpoint
+</code></pre>
+
+<!-- more --> 
+
+<p>There are some distributed training libraries such as <code>DataDistributedParallel</code> of Pytorch, <code>Apex</code> of Nvidia, and <code>Horovod</code> of Uber. <strong>&ldquo;Sometime both <code>DataDistributedParallel</code> and <code>Apex</code> are not compatible with <code>checkpoint_sequential</code> associated with chunks larger than 1, which means that the computed local gradients are not synchronous for all ranks when performing Ring-allreduce operation. It suprised me. So far, we cannot fix this bug</strong>. We will show tests by through a a comparison of <code>Horovod</code> and <code>Apex</code> over <a href="https://github.com/prigoyal/pytorch_memonger/tree/master/">a simple network</a>.
+<img src="https://github.com/shanyit/picture/raw/master/Figure3.png" alt="" /></p>
+
+<h2 id="notes-about-checkpoint-sequential">Notes about checkpoint_sequential</h2>
+
+<p>Please note that the <code>checkpoint_sequential</code> only works out in case of that the output of current layer is the input of next layer. You should make sure the number of elements in <code>forward</code> API is equal to the number of elements of <code>return</code> after some calculation.</p>
+
+<pre><code class="language-python">Class balba(torch.nn.Module):
+    balabalabala
+    def forward(self, A, B, C):
+        balabala
+        return A, B, C
+</code></pre>
+
+<p>If B, C don&rsquo;t require gradients, we let B and C as global variables. Then define your model like this</p>
+
+<pre><code class="language-python">Class balba(torch.nn.Module):
+    balabalabala
+    def forward(self, A):
+        some calculation in terms of B, C
+        return A
+</code></pre>
+
+<h2 id="environment">Environment</h2>
+
+<pre><code>Pytorch 1.2
+Cuda 10.0
+NCCL 2.4
+</code></pre>
+
+<h2 id="how-to-run">How to run</h2>
+
+<pre><code class="language-bash">bash run_docker_checkpoint_sequential.sh # start docker run
+cd /projects/mtl     # enter /projects/mtl
+bash main_apex.sh    # test apex
+bash main_horovod.sh # test horovod
+</code></pre>
+
+<p>Logfiles are in <code>logs</code> folder for each process.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2017-08-15-findearth/" data-toggle="tooltip" data-placement="top" title="寻找重复地震">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/2020-01-02-imagehostingservice/" data-toggle="tooltip" data-placement="top" title="Use github for image hosting service">Next
+                            Post &rarr;</a>
+                    </li>
+                    
                 </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
             </div>
-    </section>
-	
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
             
-            <li><a target="_blank" href="https://kiddie92.github.io/">Mun</a></li>
-            
-            <li><a target="_blank" href="https://earth.usc.edu/~ybz/">耶律达</a></li>
-            
-        </ul>
-    </section>
-    
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-    
-    
-</div>
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
 
-	</div>
-</div>
-
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://kiddie92.github.io/">Mun</a></li>
+                        
+                        <li><a target="_blank" href="https://earth.usc.edu/~ybz/">耶律达</a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -342,7 +358,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/tags/distributed/index.xml' rel="alternate" type="application/rss+xml" title="Jing Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Jing Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

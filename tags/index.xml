@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Jing Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 11:29:54 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jan 2020 19:26:50 +0800</lastBuildDate>
     
 	<atom:link href="https://shanyit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>image hosting</title>
+      <link>https://shanyit.github.io/tags/image-hosting/</link>
+      <pubDate>Thu, 02 Jan 2020 19:26:50 +0800</pubDate>
+      
+      <guid>https://shanyit.github.io/tags/image-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>图床</title>
+      <link>https://shanyit.github.io/tags/%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Thu, 02 Jan 2020 19:26:50 +0800</pubDate>
+      
+      <guid>https://shanyit.github.io/tags/%E5%9B%BE%E5%BA%8A/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Checkpointing</title>
@@ -39,11 +57,11 @@
     </item>
     
     <item>
-      <title>重复地震</title>
-      <link>https://shanyit.github.io/tags/%E9%87%8D%E5%A4%8D%E5%9C%B0%E9%9C%87/</link>
+      <title>Repeating Earthquake</title>
+      <link>https://shanyit.github.io/tags/repeating-earthquake/</link>
       <pubDate>Tue, 15 Aug 2017 21:09:12 +0000</pubDate>
       
-      <guid>https://shanyit.github.io/tags/%E9%87%8D%E5%A4%8D%E5%9C%B0%E9%9C%87/</guid>
+      <guid>https://shanyit.github.io/tags/repeating-earthquake/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>image hosting on Jing Blog</title>
+    <link>https://shanyit.github.io/tags/image-hosting/</link>
+    <description>Recent content in image hosting on Jing Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2020 19:26:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://shanyit.github.io/tags/image-hosting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use github for image hosting service</title>
+      <link>https://shanyit.github.io/post/2020-01-02-imagehostingservice/</link>
+      <pubDate>Thu, 02 Jan 2020 19:26:50 +0800</pubDate>
+      
+      <guid>https://shanyit.github.io/post/2020-01-02-imagehostingservice/</guid>
+      <description>When we write something with Markdown, we frequently need to inset images to Markdown files with ![xxx](url) or ![xxx](relative path of picture). I recommand to use ![xxx](url) to add images due to changes of image paths when we migrate Blogs. However, if we use the first one, it would be better because image url does not ofen change. Github can provide us to use repositories to store our images for</description>
+    </item>
+    
+  </channel>
+</rss>

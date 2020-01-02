@@ -1806,7 +1806,7 @@ li.pingback:first-child {
 }
 .menu-footer-items a {
   color: #8c8c8c;
-  opacity: 0.4;
+  opacity: 1.0;
 }
 .menu-footer-items a:link, .menu-footer-items a:visited {
   color: #8c8c8c;

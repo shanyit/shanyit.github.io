@@ -1814,7 +1814,7 @@ li.pingback:first-child {
 }
 .menu-footer-items a:hover, .menu-footer-items a:active, .menu-footer-items a:focus {
   color: #8c8c8c;
-  opacity: 0.9;
+  opacity: 0.4;
 }
 .menu-footer-items ul {
   list-style: none;
