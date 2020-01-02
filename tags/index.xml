@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Jing Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2020 11:29:54 +0800</lastBuildDate>
     
 	<atom:link href="https://shanyit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Checkpointing</title>
+      <link>https://shanyit.github.io/tags/checkpointing/</link>
+      <pubDate>Thu, 02 Jan 2020 11:29:54 +0800</pubDate>
+      
+      <guid>https://shanyit.github.io/tags/checkpointing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed</title>
+      <link>https://shanyit.github.io/tags/distributed/</link>
+      <pubDate>Thu, 02 Jan 2020 11:29:54 +0800</pubDate>
+      
+      <guid>https://shanyit.github.io/tags/distributed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Horovod</title>
+      <link>https://shanyit.github.io/tags/horovod/</link>
+      <pubDate>Thu, 02 Jan 2020 11:29:54 +0800</pubDate>
+      
+      <guid>https://shanyit.github.io/tags/horovod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>重复地震</title>
+      <link>https://shanyit.github.io/tags/%E9%87%8D%E5%A4%8D%E5%9C%B0%E9%9C%87/</link>
+      <pubDate>Tue, 15 Aug 2017 21:09:12 +0000</pubDate>
+      
+      <guid>https://shanyit.github.io/tags/%E9%87%8D%E5%A4%8D%E5%9C%B0%E9%9C%87/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

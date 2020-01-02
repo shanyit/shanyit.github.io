@@ -6,17 +6,36 @@
     <description>Recent content on Jing Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jan 2020 11:29:54 +0800</lastBuildDate>
     
 	<atom:link href="https://shanyit.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://shanyit.github.io/post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Gradient Checkpointing Horovod</title>
+      <link>https://shanyit.github.io/post/distributedtraining/</link>
+      <pubDate>Thu, 02 Jan 2020 11:29:54 +0800</pubDate>
       
-      <guid>https://shanyit.github.io/post/</guid>
-      <description>Jing(景) Hu Papers Hu, J., Guo H., Zhang H., Seismic attenuation tomography of the Gofar Transform Fault, East Pacific Rise Using OBS observations (in preparation) Hu, J., Qiu H., Share P., Qian J., Zhang H., Ben-Zion Y., (2019) Time-dependent earthquake tomography in Southern California (in preparation) Hu, J., Qiu, H., Zhang, H., Ben-Zion Y., (2019). Inferring Vs model directly with dispersion curves of phase</description>
+      <guid>https://shanyit.github.io/post/distributedtraining/</guid>
+      <description>GradientCheckpointingHorovod Introduction Bert, Roberta, and Xlnet models are too large to be trained. They are often partioned on several GPUs (one defines this as Model Parallelism). Actually, layers are dependent which means current layer needs the ouput of preceding layer to continue some calculation. Assuming a large model is splitted into 4 parts each on a single GPU, other parts are waitting for others when one of part is runing some computation.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Zhaohuabing Blog</title>
+      <link>https://shanyit.github.io/2017/11/03/hello-world/</link>
+      <pubDate>Sat, 04 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://shanyit.github.io/2017/11/03/hello-world/</guid>
+      <description>“Yeah It&amp;rsquo;s on. ” Hello World!</description>
+    </item>
+    
+    <item>
+      <title>寻找重复地震</title>
+      <link>https://shanyit.github.io/post/findearth/</link>
+      <pubDate>Tue, 15 Aug 2017 21:09:12 +0000</pubDate>
+      
+      <guid>https://shanyit.github.io/post/findearth/</guid>
+      <description>在求取速度变化，应力降，衰减因子变化等都用到了重复地震。所以寻找重复地震以及对重复地震进行聚类分析是重点。这里我不详细讲述原理，详见文章;在</description>
     </item>
     
     <item>
