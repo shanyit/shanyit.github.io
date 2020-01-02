@@ -219,29 +219,6 @@
                 post-container">
 
                 
-                <header>
-                    <h2>TOC</h2>
-                </header>
-                <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#设计原则">设计原则</a></li>
-<li><a href="#v1alpha3中的配置资源">v1alpha3中的配置资源</a>
-<ul>
-<li><a href="#gateway">Gateway</a></li>
-<li><a href="#virtualservice">VirtualService</a></li>
-<li><a href="#destinationrule">DestinationRule</a></li>
-<li><a href="#serviceentry">ServiceEntry</a></li>
-</ul></li>
-<li><a href="#创建和删除v1alpha3路由规则">创建和删除v1alpha3路由规则</a></li>
-<li><a href="#总结">总结</a></li>
-<li><a href="#致谢">致谢</a></li>
-<li><a href="#原文">原文</a></li>
-</ul></li>
-</ul>
-</nav>
-                
                 <p>到目前为止，Istio提供了一个简单的API来进行流量管理，该API包括了四种资源：RouteRule，DestinationPolicy，EgressRule和Ingress（直接使用了Kubernets的Ingress资源）。借助此API，用户可以轻松管理Istio服务网格中的流量。该API允许用户将请求路由到特定版本的服务，为弹性测试注入延迟和失败，添加超时和断路器等等，所有这些功能都不必更改应用程序本身的代码。</p>
 
 <p>虽然目前API的功能已被证明是Istio非常引人注目的一部分，但用户的反馈也表明，这个API确实有一些缺点，尤其是在使用它来管理包含数千个服务的非常大的应用程序，以及使用HTTP以外的协议时。 此外，使用Kubernetes Ingress资源来配置外部流量的方式已被证明不能满足需求。</p>
@@ -574,7 +551,7 @@ spec:
                     
                     
                     <li class="next">
-                        <a href="/post2222222/readme/" data-toggle="tooltip" data-placement="top" title="Clean White Theme for Hugo">Next
+                        <a href="/post/readme/" data-toggle="tooltip" data-placement="top" title="Clean White Theme for Hugo">Next
                             Post &rarr;</a>
                     </li>
                     
@@ -749,12 +726,8 @@ spec:
 		<p class="copyright text-muted">
                     Copyright &copy; Jing Blog 2020
                     <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
-                    </iframe>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a>
+                    
                 </p>
             </div>
         </div>
